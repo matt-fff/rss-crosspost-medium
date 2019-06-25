@@ -28,7 +28,7 @@ class MediumCrosspost(object):
             # a single concatenated string
             tags = tags[0] if len(tags) == 1 else tags
 
-            if isinstance(tags, basestring):
+            if isinstance(tags, str):
                 self._input_data[u"tags"] = tags.split(u",")
             elif not isinstance(tags, list):
                 self._input_data[u"tags"] = [tags]

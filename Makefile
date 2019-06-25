@@ -22,9 +22,9 @@ travis-coverage: ## Run coverage.py formatted for build
 
 create-venv: ## Create a virtualenv for this project
 	$(call msg,"Creating a virtualenv for this project")
-	virtualenv --python=/usr/bin/python2.7 venv
+	virtualenv --python=/usr/bin/python3.7 venv
 	venv/bin/pip install -r requirements.txt
-	echo "$(shell pwd)/$(PACKAGE_PATH)" > venv/lib/python2.7/site-packages/$(PACKAGE_PATH).pth
+	echo "$(shell pwd)/$(PACKAGE_PATH)" > venv/lib/python3.7/site-packages/$(PACKAGE_PATH).pth
 
 publish: ## Publish the project to PyPI
 	$(call msg,"Publishing to PyPI")

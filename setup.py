@@ -3,7 +3,7 @@ import re
 import io
 from setuptools import setup
 
-PACKAGE_NAME = "medium-crosspost"
+PACKAGE_NAME = "medium-crosspost-rss"
 PACKAGE_PATH = "medium_crosspost"
 HERE = path.abspath(path.dirname(__file__))
 
@@ -20,12 +20,12 @@ setup(
     long_description=README,
     long_description_content_type="text/markdown",
     description="Easily crosspost articles to Medium",
-    author="typenil",
+    author="Matt White",
     author_email="code@typenil.com",
-    url="https://github.com/typenil/ghost-crosspost-medium",
+    url="https://github.com/typenil/rss-crosspost-medium",
     license="MIT License",
     install_requires=["requests"],
-    keywords="medium ghost crosspost blog zapier",
+    keywords="medium rss crosspost blog zapier",
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Console",
@@ -34,7 +34,7 @@ setup(
         "Natural Language :: English",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.7",
         "Topic :: Utilities",
     ],
 )
