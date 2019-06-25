@@ -2,7 +2,7 @@
 import requests
 
 
-class MediumCrosspost(object):
+class MediumCrosspost:
     required_fields = [u"title", u"canonicalUrl", u"integrationToken", u"content"]
     query_blacklist = [u"integrationToken"]
 
