@@ -1,4 +1,4 @@
-name: ghost-crosspost-medium
+name: rss-crosspost-medium
 
 on: [push]
 
